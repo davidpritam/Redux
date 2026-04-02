@@ -14,3 +14,6 @@ const themeSlice = createSlice({
         }
     }
 })
+
+export const { changeThemeToLight, changeThemeToDark } = themeSlice.actions
+export default themeSlice.reducer
