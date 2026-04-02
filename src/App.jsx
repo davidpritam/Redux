@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment } from './redux/slices/counterSlice'
+import Navbar from './components/Navbar'
 
 const App = () => {
   const num = useSelector( (state) => state.counter.count)
@@ -16,6 +17,7 @@ const App = () => {
       <button onClick={()=>{
         dispatch(decrement())
       }}>Decrement</button>
+      <Navbar/>
     </div>
   )
 }
